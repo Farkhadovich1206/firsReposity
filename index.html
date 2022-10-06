@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="collection">
+            <li class="item">Home</li>
+            <li onclick="showAbout()" class="item">About</li>
+            <li class="item">Blog</li>
+            <li class="item">Contact</li>
+            <li style="display: none;" class="item"><input placeholder="Search..." type="text"></li>
+            <li onclick="showSearch()" class="item"><i class="fas fa-search"></i></li>
+        </ul>
+    </nav>
+    <h1>DOM - part 2</h1>
+
+
+    <div class="about_modal">
+        <div>
+            <h1>About</h1>
+            <i onclick="hideAbout()" class="fa-solid fa-xmark"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur illum fugiat labore soluta voluptas architecto consequuntur? Dolor dolorem ipsam neque perferendis nihil temporibus consectetur voluptatem ullam, unde cupiditate veritatis sed laudantium facilis porro mollitia, ex quaerat veniam ea. Dolorem id doloribus, fuga veniam repellendus temporibus assumenda laudantium deserunt odio nemo nam modi hic eveniet beatae incidunt. Perferendis minus, dolore eveniet ab quod ducimus commodi accusamus velit nesciunt vitae nisi perspiciatis est natus, accusantium quis beatae delectus necessitatibus voluptatem dignissimos. Fugiat consectetur delectus praesentium laudantium incidunt soluta vero possimus accusamus. Repellendus exercitationem aut labore dolores. Velit quas animi neque accusamus similique porro quae, earum sunt illum molestiae dolor consequuntur eaque, quis quidem numquam incidunt. Dolores exercitationem repellendus ullam praesentium error doloremque deleniti consequuntur eius, cupiditate ipsum, distinctio sit mollitia repudiandae provident beatae! A, dolor maxime ut perspiciatis repellendus doloribus eum, architecto deleniti quod dignissimos vel. Atque esse rerum nemo libero!</p>
+    </div>
+
+
+    <div id="root">
+    </div>
+
+
+    <input class="inp_text" type="text" >
+    <button onclick="createText()" class="btn">create element</button>
+    
+    <div class="container">
+        <p class="box">hello</p>
+        <p class="box">hello</p>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
